@@ -4,9 +4,9 @@ spring:
   redis:
     port: 6379
     database: 0
-    host: r-uf6731451cd336e4.redis.rds.aliyuncs.com
-    username: root
-    password: qy1HCuRtV3sFQk8x
+    host: localhost
+    username:
+    password:
     jedis:
       pool:
         max-active: 8
@@ -15,7 +15,7 @@ spring:
         min-idle: 0
     timeout: 5000ms
   application:
-    name: oms-wg-task
+    name: dispatch-task
   jpa:
     hibernate:
       ddl-auto: none
@@ -30,9 +30,9 @@ spring:
     store-type: none
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://rm-uf6g796y7jg9pr02h5o.mysql.rds.aliyuncs.com:3306/wg_0520?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull
-    username: oam
-    password: Wg_qjy&^688_
+    url: jdbc:mysql://localhost:3306/wg_0520?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
     platform: mysql
     type: com.alibaba.druid.pool.DruidDataSource
 

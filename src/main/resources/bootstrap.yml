@@ -4,7 +4,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application:
-    name: oms-wg-task
+    name: dispatch-task
   profiles: local
   cloud:
     nacos:
@@ -20,12 +20,12 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application:
-    name: oms-wg-task
+    name: dispatch-task
   profiles: daily
   cloud:
     nacos:
       config:
-        server-addr: 10.66.0.20:8488
+        server-addr: localhost：8848
         context-path: nacos
         file-extension: yml
 
@@ -36,12 +36,12 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application:
-    name: oms-wg-task
+    name: dispatch-task
   profiles: uat
   cloud:
     nacos:
       config:
-        server-addr: 10.66.0.20:30001
+        server-addr: localhost：8848
         context-path: nacos
         file-extension: yml
 
@@ -52,11 +52,11 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application:
-    name: oms-wg-task
+    name: dispatch-task
   profiles: prod
   cloud:
     nacos:
       config:
-        server-addr: 47.100.21.251:50010
+        server-addr: localhost：8848
         context-path: nacos
         file-extension: yml

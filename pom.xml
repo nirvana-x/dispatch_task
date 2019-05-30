@@ -8,11 +8,11 @@
         <version>2.1.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cn.itrigger</groupId>
-    <artifactId>itrigger-oms-wg-task</artifactId>
-    <name>itrigger-oms-wg-task</name>
+    <groupId>cn.nirvana</groupId>
+    <artifactId>dispatch-task</artifactId>
+    <name>dispatch-task</name>
     <version>0.0.1-SNAPSHOT</version>
-    <description>卫岗定时任务调度服务</description>
+    <description>定时任务调度服务</description>
 
     <properties>
         <java.version>1.8</java.version>
