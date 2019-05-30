@@ -1,0 +1,41 @@
+logging:
+  config: classpath:logback-spring.xml
+spring:
+  redis:
+    port: 6379
+    database: 0
+    host: r-uf6731451cd336e4.redis.rds.aliyuncs.com
+    username: root
+    password: qy1HCuRtV3sFQk8x
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+    timeout: 5000ms
+  application:
+    name: oms-wg-task
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        hbm2ddl:
+          auto: none
+    show-sql: true
+  session:
+    store-type: none
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-uf6g796y7jg9pr02h5o.mysql.rds.aliyuncs.com:3306/wg_0520?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull
+    username: oam
+    password: Wg_qjy&^688_
+    platform: mysql
+    type: com.alibaba.druid.pool.DruidDataSource
+
+swagger:
+  api:
+    url: localhost:8029

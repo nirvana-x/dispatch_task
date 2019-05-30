@@ -1,0 +1,62 @@
+server:
+  port: 8029
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: oms-wg-task
+  profiles: local
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8488
+        context-path: nacos
+        file-extension: yml
+
+---
+server:
+  port: 8029
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: oms-wg-task
+  profiles: daily
+  cloud:
+    nacos:
+      config:
+        server-addr: 10.66.0.20:8488
+        context-path: nacos
+        file-extension: yml
+
+---
+server:
+  port: 8029
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: oms-wg-task
+  profiles: uat
+  cloud:
+    nacos:
+      config:
+        server-addr: 10.66.0.20:30001
+        context-path: nacos
+        file-extension: yml
+
+---
+server:
+  port: 8029
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: oms-wg-task
+  profiles: prod
+  cloud:
+    nacos:
+      config:
+        server-addr: 47.100.21.251:50010
+        context-path: nacos
+        file-extension: yml
