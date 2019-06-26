@@ -10,10 +10,10 @@ spring:
     jedis:
       pool:
         max-active: 8
-        max-wait: -1ms
+        max-wait: -1
         max-idle: 8
         min-idle: 0
-    timeout: 5000ms
+    timeout: 5000
   application:
     name: dispatch-task
   jpa:
@@ -39,3 +39,31 @@ spring:
 swagger:
   api:
     url: localhost:8029
+
+#邮件配置
+mail:
+  transport:
+    protocol: smtp
+  smtp:
+    host: smtp.qq.com
+    port: 25
+    auth: true
+  #调试模式
+  debug: true
+  #邮件主题
+  subject: 调度服务预警
+  #发件人邮箱
+  sender: XXXX@qq.com
+  #发件人昵称
+  senderNike: XXX
+  #授权码
+  authPassword: XXX
+  #邮件接收人
+  receiver: XXXx@qq.com
+  #邮件发送功能是否启用
+  enable: false
+
+#任务监控 最后一次执行 时间间隔 单位 天
+task:
+  monitor:
+    intervalTime: 1
